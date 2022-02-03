@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./responsive-style.css">
+    <title>لندینگ پیج داروخانه</title>
+</head>
+
+<body>
+    <!-- بسم الله الرحمن الرحیم -->
+    <header>
+
+    </header>
+    <main>
+        <img class="main-photo-medicine" src="./medicine.png" alt="">
+        <h1 class="main-title-h1">داروخانه دکتر رضا رستگار</h1>
+        <p class="main-dec">شما می توانید دارو های مورد نیاز خود را به صورت اینترنتی در شهر مشهد درب منزل در کمترین زمان
+            ممکن
+            دریافت کنید</p>
+
+        <form action="#" class="medicine-form">
+            <h3 class="main-title-h3">فرم درخواست</h3>
+
+            <label for="name">نام و نام خانوادگی</label>
+            <input type="text" name="name" id="">
+
+            <label for="codemeli">کد ملی</label>
+            <input type="number" name="codemeli" id="">
+
+            <label for="phone">شماره تلفن همراه</label>
+            <input type="number" name="codemeli" id="">
+
+            <input type="file" name="daro" id="">
+            <label class="custom-file-upload">
+                <input type="file" id="file" />
+                آپلود عکس دفترچه بیمه
+            </label>
+
+            <input type="button" value="ثبت درخواست">
+        </form>
+
+    </main>
+    <script>
+        var uploadField = document.getElementById("file");
+
+        uploadField.onchange = function () {
+            if (this.files[0].size > 2000) {
+                alert("حجم فایل شما بیشتر از 2 مگابایت می باشد ، لطفا دوباره تلاش کنید");
+                this.value = "";
+            };
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+/*  - - - Media Query for Mobile Devices  - - - */
+@media (max-width: 767px) {
+  main {
+    width: 90%;
+  }
+  .main-photo-medicine {
+    width: 400px;
+  }
+  .main-title-h1 {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+  }
+  .main-dec {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+  }
+  .medicine-form {
+    position: absolute;
+    top: 180px;
+    right: 20px;
+  }
+}
+/*  - - - Media Query for Tablets Ipads portrait mode - - - */
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    width: 90%;
+  }
+  .main-photo-medicine {
+    width: 400px;
+  }
+  .main-title-h1 {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+  }
+  .main-dec {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+  }
+  .medicine-form {
+    position: absolute;
+    top: 180px;
+    right: 20px;
+  }
+}

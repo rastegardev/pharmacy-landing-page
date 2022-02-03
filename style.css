@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "IranSansDN";
+
+  src: url("./IranSansDN.woff") format("woff");
+}
+@font-face {
+  font-family: "Vazir";
+  src: url("./IranSansDN.woff2") format("woff2");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "IranSansDN";
+  background-color: #63a4ff;
+  background-image: linear-gradient(315deg, #96c1fd 0%, #a4f4fa 74%);
+}
+
+main {
+  width: 55%;
+  height: 600px;
+  background: #fff;
+  position: relative;
+  background: #ffffff00;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px #0000001a;
+  backdrop-filter: blur(11.9px);
+  -webkit-backdrop-filter: blur(11.9px);
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.main-photo-medicine {
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+}
+
+.main-title-h1 {
+  font-size: 2rem;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.main-dec {
+  font-size: 1rem;
+  position: absolute;
+  top: 100px;
+  right: 30px;
+}
+
+.medicine-form {
+  display: flex;
+  flex-flow: column;
+  z-index: 10;
+  position: absolute;
+  top: 150px;
+  right: 30px;
+}
+
+.medicine-form h3 {
+  margin: 5px 0;
+  font-size: 1.3rem;
+}
+
+.medicine-form input {
+  width: 300px;
+  height: 40px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-family: "IranSansDN";
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.medicine-form label {
+  margin: 10px 0 0;
+}
+
+.medicine-form input[type="button"] {
+  margin: 20px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: "IranSansDN";
+  border-radius: 50px;
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
+
+.medicine-form input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  padding: 6px 12px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px dashed rgb(185, 185, 185);
+  background: #eee;
+  cursor: pointer;
+}
